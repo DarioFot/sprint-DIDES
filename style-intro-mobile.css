@@ -7,7 +7,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  background: url(links/no_frau.jpg) lightgray 50% / cover no-repeat;
+  background: url(links/no_frau.jpg) lightgray 0% / cover no-repeat;
 }
 
 .intro_1,
