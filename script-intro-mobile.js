@@ -1,6 +1,6 @@
-// Funktion zum Öffnen des HTML-Dateis "index.html"
+// Funktion zum Öffnen des HTML-Dateis "mobile.html"
 function openIndexHtml() {
-  window.open("index.html", "_blank"); // Öffne "index.html" in einem neuen Tab
+  window.open("mobile.html", "_blank"); // Öffne "mobile.html" in einem neuen Tab
 }
 
 // Intro_1 erscheinen lassen
@@ -18,8 +18,8 @@ setTimeout(function () {
   document.querySelector(".intro_2").classList.add("appear");
 }, 6000); // Erscheinen nach weiteren 2 Sekunden (insgesamt 6 Sekunden)
 
-// Intro_2 verschwinden lassen und "index.html" öffnen
+// Intro_2 verschwinden lassen und "mobile.html" öffnen
 setTimeout(function () {
   document.querySelector(".intro_2").classList.remove("appear");
-  openIndexHtml(); // Öffne "index.html" nach Abschluss der Animation
+  openIndexHtml(); // Öffne "mobile.html" nach Abschluss der Animation
 }, 8000); // Verschwinden nach weiteren 2 Sekunden (insgesamt 8 Sekunden)
