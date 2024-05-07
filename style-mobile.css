@@ -6,7 +6,7 @@ body {
 
 .container {
   width: 100vw;
-  height: 100dvh;
+  height: 100svh;
   display: grid;
   font-size: 10vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
