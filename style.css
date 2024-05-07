@@ -27,8 +27,8 @@ div.container {
   color: white;
   grid-row-start: 4;
   grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 3;
   align-content: center;
   text-align: right;
 }
@@ -71,7 +71,7 @@ div.container {
   grid-column-start: 3;
   grid-column-end: 3;
   background: url(links/circle_2.png) no-repeat;
-  background-size: 80%;
+  background-size: 400%;
   background-position: center;
   transition: transform 2s; /* Übergang für die Transformation hinzugefügt */
   animation: rotateClockwise 20s linear infinite; /* Animation für die kontinuierliche Drehung */
