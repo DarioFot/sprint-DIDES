@@ -23,6 +23,7 @@ body {
   align-content: end;
   text-align: right;
   margin-left: 2px; /* Oder transform: translateX(40px); */
+  margin-bottom: 20px;
 }
 
 .DIVE {
@@ -32,6 +33,7 @@ body {
   grid-column-end: 13;
   align-content: end;
   margin-left: 15px; /* Oder transform: translateX(40px); */
+  margin-bottom: 20px;
 }
 
 .stars-container {
