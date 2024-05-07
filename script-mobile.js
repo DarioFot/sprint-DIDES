@@ -141,19 +141,18 @@ function openWebcam(left, top) {
       webcamElement.srcObject = stream;
       // Video-Element dem Kreiscontainer hinzufügen
       circleContainer.appendChild(webcamElement);
+
+      // Nachdem die Webcam geladen wurde, Skalierung auf 1 setzen (Startanimation)
+      circleContainer.style.transition = "transform 0.5s ease-in-out";
+      circleContainer.style.transform = "scale(1)";
     })
     .catch(function (error) {
       console.log("Error accessing webcam: ", error);
+      // Hier kannst du Fehlerbehandlung hinzufügen, z.B. eine Benachrichtigung an den Benutzer ausgeben
     });
 
   // Kreiscontainer zur Seite hinzufügen
   document.body.appendChild(circleContainer);
-
-  // Nachdem die Webcam geladen wurde, Skalierung auf 1 setzen (Startanimation)
-  circleContainer.style.transition = "transform 0.5s ease-in-out";
-  setTimeout(function () {
-    circleContainer.style.transform = "scale(1)";
-  }, 100); // Startanimation verzögern, um sicherzustellen, dass der Kreiscontainer vollständig gerendert ist
 }
 
 function resetElements() {
