@@ -16,24 +16,22 @@ body {
 }
 
 .NOSE {
-  grid-row-start: 4;
-  grid-row-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 7;
   align-content: end;
   text-align: right;
   margin-left: 2px; /* Oder transform: translateX(40px); */
-  margin-bottom: 300px;
 }
 
 .DIVE {
-  grid-row-start: 4;
-  grid-row-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
   grid-column-start: 9;
   grid-column-end: 13;
   align-content: end;
   margin-left: 15px; /* Oder transform: translateX(40px); */
-  margin-bottom: 300px;
 }
 
 .stars-container {
