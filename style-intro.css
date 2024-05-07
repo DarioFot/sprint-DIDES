@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  background: url(links/keine_frau.jpg) lightgray 0% / cover no-repeat;
+  background-position: center;
+  animation: fadeInOutBackground 4s ease-in-out 1s forwards; /* Hintergrundbild-Animation */
 }
 .container {
   width: 100vw;
@@ -7,7 +10,6 @@ body {
   display: grid;
   grid-template-columns: 10vh 8fr 50vh 8fr 10vh;
   grid-template-rows: 1fr 1fr 5vh 50vh 10vh 1fr 1fr;
-  background: url(links/keine_frau.jpg) lightgray 0% / cover no-repeat;
 }
 
 .intro_1,
