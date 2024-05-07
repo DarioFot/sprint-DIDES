@@ -5,8 +5,8 @@ body {
 }
 
 .container {
-  width: 100svw;
-  height: 100svh;
+  width: 100dvw;
+  height: 100dvh;
   display: grid;
   font-size: 10vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
