@@ -11,7 +11,7 @@ body {
   font-size: 12vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  background: url(links/frau_mobile.png) lightgray 50% / cover no-repeat;
+  background: url(links/angesetzt_mobile\ 3.png) lightgray 50% / cover no-repeat;
   position: relative;
 }
 
@@ -40,7 +40,7 @@ body {
   grid-column-start: 4;
   grid-column-end: 13;
   background: url(links//1_star_mobiel.png) no-repeat;
-  background-size: 110%;
+  background-size: 100%;
   background-position: center;
 }
 

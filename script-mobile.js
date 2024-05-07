@@ -122,10 +122,10 @@ function openWebcam(left, top) {
   var circleContainer = document.createElement("div");
   circleContainer.classList.add("circle-container");
   circleContainer.style.position = "absolute";
-  circleContainer.style.width = "20vh"; // anpassen nach Bedarf
-  circleContainer.style.height = "20vh"; // anpassen nach Bedarf
-  circleContainer.style.left = left + "px"; // Position des .circle-Containers berücksichtigen
-  circleContainer.style.top = top + "px"; // Position des .circle-Containers berücksichtigen
+  circleContainer.style.width = "18vh"; // anpassen nach Bedarf
+  circleContainer.style.height = "18vh"; // anpassen nach Bedarf
+  circleContainer.style.left = left - 8 + "px"; // 20 Pixel nach links verschieben
+  circleContainer.style.top = top + 10 + "px"; // 10 Pixel nach unten verschieben
   circleContainer.style.borderRadius = "50%"; // Container als Kreis formen
   circleContainer.style.overflow = "hidden"; // Verhindern, dass Webcam-Bild außerhalb des Kreises sichtbar ist
   circleContainer.style.transform = "scale(0.9)"; // Startskalierung auf 0.5 setzen
@@ -141,18 +141,19 @@ function openWebcam(left, top) {
       webcamElement.srcObject = stream;
       // Video-Element dem Kreiscontainer hinzufügen
       circleContainer.appendChild(webcamElement);
-
-      // Nachdem die Webcam geladen wurde, Skalierung auf 1 setzen (Startanimation)
-      circleContainer.style.transition = "transform 0.5s ease-in-out";
-      circleContainer.style.transform = "scale(1)";
     })
     .catch(function (error) {
       console.log("Error accessing webcam: ", error);
-      // Hier kannst du Fehlerbehandlung hinzufügen, z.B. eine Benachrichtigung an den Benutzer ausgeben
     });
 
   // Kreiscontainer zur Seite hinzufügen
   document.body.appendChild(circleContainer);
+
+  // Nachdem die Webcam geladen wurde, Skalierung auf 1 setzen (Startanimation)
+  circleContainer.style.transition = "transform 0.5s ease-in-out";
+  setTimeout(function () {
+    circleContainer.style.transform = "scale(1.5)";
+  }, 100); // Startanimation verzögern, um sicherzustellen, dass der Kreiscontainer vollständig gerendert ist
 }
 
 function resetElements() {
