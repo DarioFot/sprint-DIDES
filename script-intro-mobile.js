@@ -22,4 +22,4 @@ setTimeout(function () {
 setTimeout(function () {
   document.querySelector(".intro_2").classList.remove("appear");
   openIndexHtml(); // Öffne "mobile.html" nach Abschluss der Animation
-}, 8000); // Verschwinden nach weiteren 2 Sekunden (insgesamt 8 Sekunden)
+}, 160000); // Verschwinden nach weiteren 2 Sekunden (insgesamt 8 Sekunden)

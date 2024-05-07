@@ -1,6 +1,6 @@
 // Funktion zum Öffnen des HTML-Dateis "index.html"
 function openIndexHtml() {
-  window.open("index.html", "_blank"); // Öffne "index.html" in einem neuen Tab
+  window.open("index.html", "_self"); // Öffne "index.html" im gleichen Fenster
 }
 
 // Intro_1 erscheinen lassen

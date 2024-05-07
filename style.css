@@ -2,6 +2,11 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   color: white;
+  background: url(links/frau.jpg) lightgray 50% / cover no-repeat;
+}
+div.container {
+  opacity: 0;
+  transition: opacity 3s ease;
 }
 
 .container {
@@ -11,7 +16,6 @@ body {
   font-size: 8vw;
   grid-template-columns: 10vh 8fr 50vh 8fr 10vh;
   grid-template-rows: 1fr 1fr 5vh 50vh 10vh 1fr 1fr;
-  background: url(links/frau.jpg) lightgray 50% / cover no-repeat;
   position: relative;
 }
 

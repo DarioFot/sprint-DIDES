@@ -196,3 +196,8 @@ function closeWebcam() {
     circleContainer.remove();
   }
 }
+
+window.onload = function () {
+  var div = document.querySelector("div.container");
+  div.style.opacity = 1;
+};
