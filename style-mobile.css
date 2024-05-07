@@ -37,8 +37,8 @@ body {
 }
 
 .stars-container {
-  grid-row-start: 15;
-  grid-row-end: 15;
+  grid-row-start: 16;
+  grid-row-end: 16;
   grid-column-start: 4;
   grid-column-end: 13;
   background: url(links//1_star_mobiel.png) no-repeat;
@@ -47,8 +47,8 @@ body {
 }
 
 .title {
-  grid-row-start: 16;
-  grid-row-end: 16;
+  grid-row-start: 17;
+  grid-row-end: 17;
   grid-column-start: 4;
   grid-column-end: 13;
   font-size: 1.6vh;
