@@ -1,5 +1,5 @@
-// Funktion zum Öffnen des HTML-Dateis "mobile.html"
-function openIndexHtml() {
+// Funktion zum Öffnen der HTML-Datei "mobile.html"
+function openMobileHtml() {
   window.open("mobile.html", "_self"); // Öffne "mobile.html" im gleichen Fenster
 }
 
@@ -21,5 +21,5 @@ setTimeout(function () {
 // Intro_2 verschwinden lassen und "mobile.html" öffnen
 setTimeout(function () {
   document.querySelector(".intro_2").classList.remove("appear");
-  openIndexHtml(); // Öffne "mobile.html" nach Abschluss der Animation
+  openMobileHtml(); // Öffne "mobile.html" nach Abschluss der Animation
 }, 8000); // Verschwinden nach weiteren 2 Sekunden (insgesamt 8 Sekunden)
