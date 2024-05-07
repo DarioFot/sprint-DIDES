@@ -105,7 +105,7 @@ function changeBackground() {
     case 'url("links/2.22_star.png")':
       // Sobald das letzte Bild erreicht ist, werden die anderen Aktionen ausgeführt
       // stars-container 10vh nach oben verschieben
-      starsContainer.style.transform = "translateY(-60px)";
+      starsContainer.style.transform = "translateY(-6vh)";
 
       return;
     default:
