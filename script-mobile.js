@@ -14,7 +14,7 @@ function moveElements() {
   // DIVE 100px nach rechts verschieben
   diveElement.style.transform = "translateY(-80px)";
   // stars-container 100px nach oben verschieben mit smoother Transition
-  starsContainer.style.transform = "translateY(-120px)";
+  starsContainer.style.transform = "translateY(-130px)";
   starsContainer.style.transition = "transform 0.5s ease-in-out"; // Smoothere Transition hinzufügen
 
   // Transparenz einstellen
@@ -67,10 +67,10 @@ function addTextAfterDelay() {
 
   // Positioniere das Textelement
   textElement.style.position = "absolute";
-  textElement.style.top = "calc(50vh + 10vh)";
+  textElement.style.top = "calc(50vh + 14vh)";
   textElement.style.left = "50%";
   textElement.style.transform = "translateX(-50%)";
-  textElement.style.fontSize = "4em"; // Anpassen der Schriftgröße nach Bedarf
+  textElement.style.fontSize = "4.5em"; // Anpassen der Schriftgröße nach Bedarf
   textElement.style.color = "white"; // Korrekte Angabe der Textfarbe
   textElement.style.opacity = "0"; // Setze die Anfangsopazität auf 0
 
@@ -105,7 +105,7 @@ function changeBackground() {
     case 'url("links/2.22_star.png")':
       // Sobald das letzte Bild erreicht ist, werden die anderen Aktionen ausgeführt
       // stars-container 10vh nach oben verschieben
-      starsContainer.style.transform = "translateY(20px)";
+      starsContainer.style.transform = "translateY(-60px)";
 
       return;
     default:
