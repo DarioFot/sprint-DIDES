@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background: url(links/keine_frau.jpg) lightgray 0% / cover no-repeat;
+  background: url(links/angesetzt_mobile\ 3\ non.png) lightgray 0% / cover
+    no-repeat;
   background-position: center;
   animation: fadeInOutBackground 4s ease-in-out 1s forwards; /* Hintergrundbild-Animation */
 }
@@ -46,7 +47,6 @@ body {
   opacity: 0;
   position: fixed;
   padding: 20px; /* Hinzufügen von Padding */
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
