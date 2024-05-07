@@ -8,7 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  font-size: 10vw;
+  font-size: 12vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   background: url(links/frau_mobile.png) lightgray 50% / cover no-repeat;
