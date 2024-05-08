@@ -124,7 +124,7 @@ function openWebcam(left, top) {
   circleContainer.style.position = "absolute";
   circleContainer.style.width = "18vh"; // anpassen nach Bedarf
   circleContainer.style.height = "18vh"; // anpassen nach Bedarf
-  circleContainer.style.left = left - 8 + "px"; // 20 Pixel nach links verschieben
+  circleContainer.style.left = left + 10 + "px"; // 20 Pixel nach links verschieben
   circleContainer.style.top = top + 10 + "px"; // 10 Pixel nach unten verschieben
   circleContainer.style.borderRadius = "50%"; // Container als Kreis formen
   circleContainer.style.overflow = "hidden"; // Verhindern, dass Webcam-Bild außerhalb des Kreises sichtbar ist
@@ -139,6 +139,10 @@ function openWebcam(left, top) {
       webcamElement.style.width = "auto";
       webcamElement.style.height = "100%";
       webcamElement.srcObject = stream;
+      webcamElement.autoplay = true;
+      webcamElement.muted = true;
+      webcamElement.loop = true;
+      webcamElement.playsInline = true;
       // Video-Element dem Kreiscontainer hinzufügen
       circleContainer.appendChild(webcamElement);
     })
@@ -184,12 +188,11 @@ function resetElements() {
   }
 
   // Zurücksetzen des Hintergrundbilds
-  starsContainer.style.backgroundImage = 'url("links/1_star_mobiel.png")';
+  starsContainer.style.backgroundImage = 'url("links/stars.png")';
 
   // Schließen der Webcam
   closeWebcam();
 }
-
 function closeWebcam() {
   var circleContainer = document.querySelector(".circle-container");
   if (circleContainer) {
@@ -199,3 +202,25 @@ function closeWebcam() {
 function closeWebcam() {
   var circleContainer = document.querySelector(".circle-container");
 }
+
+function closeWebcam() {
+  var circleContainer = document.querySelector(".circle-container");
+  if (circleContainer) {
+    // Videoelement stoppen
+    var webcamElement = circleContainer.querySelector(".webcam");
+    if (webcamElement && webcamElement.srcObject) {
+      var stream = webcamElement.srcObject;
+      var tracks = stream.getTracks();
+      tracks.forEach(function (track) {
+        track.stop();
+      });
+    }
+    // Kreiscontainer entfernen
+    circleContainer.remove();
+  }
+}
+
+window.onload = function () {
+  var div = document.querySelector("div.container");
+  div.style.opacity = 1;
+};

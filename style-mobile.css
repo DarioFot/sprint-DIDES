@@ -2,8 +2,17 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   color: white;
+  background: url(links/angesetzt_mobile\ 3.png) lightgray 50% / cover no-repeat;
+  position: relative;
 }
 
+video {
+  filter: ;
+}
+div.container {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
 .container {
   width: 100vw;
   height: 100vh;
@@ -59,8 +68,8 @@ body {
 .circle {
   grid-row-start: 8;
   grid-row-end: 12;
-  grid-column-start: 6;
-  grid-column-end: 11;
+  grid-column-start: 5;
+  grid-column-end: 12;
   background: url(links//circle_mobile.png) no-repeat;
   background-size: 100%;
   background-position: center;

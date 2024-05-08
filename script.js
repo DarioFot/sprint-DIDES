@@ -130,7 +130,7 @@ function openWebcam(left, top) {
   circleContainer.style.overflow = "hidden"; // Verhindern, dass Webcam-Bild außerhalb des Kreises sichtbar ist
   circleContainer.style.transform = "scale(0.9)"; // Startskalierung auf 0.5 setzen
 
-  // Hier die Webcam einbinden
+  // Hier die Webcam einbinden mit autoplay, muted, loop und playsinline
   navigator.mediaDevices
     .getUserMedia({ video: true })
     .then(function (stream) {
@@ -139,6 +139,11 @@ function openWebcam(left, top) {
       webcamElement.style.width = "auto";
       webcamElement.style.height = "100%";
       webcamElement.srcObject = stream;
+      // Hinzufügen der zusätzlichen Attribute für Autoplay, Mute, Loop und Playsinline
+      webcamElement.autoplay = true;
+      webcamElement.muted = true;
+      webcamElement.loop = true;
+      webcamElement.playsInline = true;
       // Video-Element dem Kreiscontainer hinzufügen
       circleContainer.appendChild(webcamElement);
     })
