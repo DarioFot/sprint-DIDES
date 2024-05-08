@@ -136,8 +136,8 @@ function openWebcam(left, top) {
     .then(function (stream) {
       var webcamElement = document.createElement("video");
       webcamElement.classList.add("webcam");
-      webcamElement.style.width = "auto";
-      webcamElement.style.height = "100%";
+      webcamElement.style.width = "auto"; // Breite automatisch anpassen
+      webcamElement.style.height = "100%"; // Höhe auf 100% setzen
       webcamElement.srcObject = stream;
       webcamElement.autoplay = true;
       webcamElement.muted = true;
