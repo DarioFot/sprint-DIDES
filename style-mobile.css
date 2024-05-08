@@ -71,7 +71,7 @@ div.container {
   grid-column-start: 5;
   grid-column-end: 12;
   background: url(links//circle_mobile.png) no-repeat;
-  background-size: 100%;
+  background-size: 80%;
   background-position: center;
   transition: transform 2s; /* Übergang für die Transformation hinzugefügt */
   animation: rotateClockwise 20s linear infinite; /* Animation für die kontinuierliche Drehung */
